@@ -623,6 +623,12 @@ button:not(:disabled),
 .m-2{
   margin: 10px;
 }
+.m-40{
+  margin: 40px;
+}
+.p-40{
+  padding: 40px 0px;
+}
 .my-4 {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
@@ -796,11 +802,14 @@ button:not(:disabled),
   font-weight: bold;
 }
 .font-size{
-  font-size: x-large;
+  font-size: 20px;
 }
 
 .font-size-small{
   font-size: 17px;
+}
+ul li:hover{
+  color: #e99401;
 }
 
 .mt-2{

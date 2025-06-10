@@ -12,7 +12,7 @@ import HistoryOrders from "./components/HistoryOrders";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/EcommerceOroCuerda">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -1,9 +1,9 @@
 {
-  "name": "proyectotiendaguitarras",
+  "name": "ecommerce-oro-cuerda",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://edwinivans.github.io/ProyectoTiendaGuitarras",
+  "homepage": "https://edwinivans.github.io/EcommerceOroCuerda/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

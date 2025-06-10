@@ -1,9 +1,8 @@
 import React, { useEffect, useReducer, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { Guitar as GuitarType } from "../types/types";
 import { db } from "../data/dbProducts";
 import { useCartContext } from "../context/CartContext";
-import { Link } from "react-router-dom";
 
 export default function GuitarDetail() {
   const { dispatch } = useCartContext();
@@ -22,7 +21,7 @@ export default function GuitarDetail() {
       <div className="col-4">
         <img
           className="img-fluid"
-          src={`/img/${guitar.image}.jpg`}
+          src={`${import.meta.env.BASE_URL}/img/${guitar.image}.jpg`}
           alt="imagen guitarra"
         />
       </div>

@@ -17,16 +17,16 @@ export default function Guitar({ guitar, dispatch }: GuitarProps) {
         <div className="col-4">
           <img
             className="img-fluid"
-            src={`/img/${image}.jpg`}
+            src={`${import.meta.env.BASE_URL}/img/${image}.jpg`}
             alt="imagen guitarra"
           />
-        </div>        
-      </Link>
-        <div className="col-8">
-          <h3 className="text-black fs-4 fw-bold text-uppercase">{name}</h3>
-          <p>{description}</p>
-          <p className="fw-black text-primary fs-3">${price}</p>
         </div>
+      </Link>
+      <div className="col">
+        <h3 className="text-black fs-4 fw-bold text-uppercase">{name}</h3>
+        <p>{description}</p>
+        <p className="fw-black text-primary fs-3">${price}</p>
+      </div>
       <div className="col-8">
         <button
           type="button"

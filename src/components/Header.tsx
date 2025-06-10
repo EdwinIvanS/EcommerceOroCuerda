@@ -10,16 +10,16 @@ export default function Header() {
       <div className="container-xl">
         <div className="row display-header justify-content-md-between">
           <div className="col-8 col-md-3">
-            <a href="/">
+            <Link to="/">
               <img
                 className="img-fluid"
-                src="/img/Logo.png"
+                src={`${import.meta.env.BASE_URL}/img/Logo.png`}
                 alt="imagen logo"
               />
-            </a>
+            </Link>
           </div>
           <div className="col-8 col-md-3 mt-5">
-            <ul className="text-init flex-text font-size">
+            <ul className="text-init flex-text font-size-small">
               <Link to={`/mision`}>
                 <li>Misión</li>
               </Link>

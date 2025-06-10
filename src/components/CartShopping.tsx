@@ -19,8 +19,11 @@ export default function Cart({ cart, dispatch }: CartProps) {
 
   return (
     <div className="carrito">
-      
-      <img className="img-fluid" src="/img/carrito.png" alt="imagen carrito" />
+      <img
+        className="img-fluid"
+        src={`${import.meta.env.BASE_URL}img/carrito.png`}
+        alt="imagen carrito"
+      />
 
       <div id="carrito" className="bg-white p-3">
         {isEmpty ? (
@@ -43,7 +46,7 @@ export default function Cart({ cart, dispatch }: CartProps) {
                     <td>
                       <img
                         className="img-fluid"
-                        src={`/img/${guitar.image}.jpg`}
+                        src={`${import.meta.env.BASE_URL}img/${guitar.image}.jpg`}
                         alt="imagen guitarra"
                       />
                     </td>

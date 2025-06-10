@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <>
       <div className="diplay-flex-container">
-        <img className="img-fluid" src="/img/ESP.png" alt="imagen logo" />
-        <img className="img-fluid" src="/img/Fender.png" alt="imagen logo" />
-        <img className="img-fluid" src="/img/Gibson.png" alt="imagen logo" />
-         <img className="img-fluid" src="/img/Tailor.png" alt="imagen logo" />
+        <img className="img-fluid" src={`${import.meta.env.BASE_URL}/img/ESP.png`} alt="imagen logo" />
+        <img className="img-fluid" src={`${import.meta.env.BASE_URL}/img/Fender.png`} alt="imagen logo" />
+        <img className="img-fluid" src={`${import.meta.env.BASE_URL}/img/Gibson.png`} alt="imagen logo" />
+         <img className="img-fluid" src={`${import.meta.env.BASE_URL}/img/Tailor.png`} alt="imagen logo" />
       </div>
       <main className="container-xl mt-5">
         <h2 className="text-center">Nuestra Colección</h2>
